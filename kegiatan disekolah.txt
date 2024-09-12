@@ -1,6 +1,5 @@
 - Ujikom Internal
 - Ujikom Exsternal
 - Ujian Sekolah
-- Penilaian Hasil Ujian Sekolah
 - Kegiatan MPPS
 - Praktek Kerja Lapangan
