@@ -1,0 +1,4 @@
+- Ujikom Internal
+- Ujikom Exsternal
+- Ujian Sekolah
+- Praktek Kerja Lapangan
