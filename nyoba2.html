@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        /* Global Style */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #23409e;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .content {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        /* Media Query for Tablets */
+        @media (max-width: 768px) {
+            nav {
+                text-align: left;
+                padding: 10px;
+            }
+
+            main {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                order: -1; /* Move sidebar above content */
+                padding: 15px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+        }
+
+        /* Media Query for Mobile Phones */
+        @media (max-width: 480px) {
+            header {
+                padding: 1rem;
+                font-size: 1.2rem;
+            }
+
+            nav {
+                padding: 5px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .content, .sidebar {
+                padding: 10px;
+            }
+
+            footer {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Layout Eep Saepuloh</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <div class="content">
+            <h2>Area Konten Utama</h2>
+            <p>Ini adalah area yang menjelaskan kegiatan kuliah saya. Setiap hari saya mengajar mata pelajaran Rekayasa Perangkat Lunak (RPL), menjalani tugas sebagai bagian tata usaha di sekolah, serta menjadi mahasiswa aktif di Universitas Perjuangan Tasikmalaya. Selain itu, saya juga menjalani aktivitas sebagai santri di pesantren.</p>
+        </div>
+        <div class="sidebar">
+            <h2>Aktivitas Tambahan</h2>
+            <p>Di luar kegiatan kuliah, saya sering terlibat dalam organisasi dan kegiatan sosial. Selain itu, saya juga mengelola administrasi sekolah dan membantu kegiatan pesantren yang melibatkan santri lainnya.</p>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>eepsaepuloh 2024</p>
+    </footer>
+</body>
+</html>
